@@ -38,5 +38,7 @@ function handleClick() {
 const savedSettings = localStorage.getItem('settings');
 const parsedSettings = JSON.parse(savedSettings);
 
-body.classList.add(parsedSettings.bodyClassList);
 toolbarIcon.textContent = parsedSettings.toolbarIconTextContent;
+
+body.classList.add(parsedSettings.bodyClassList);
+console.log(parsedSettings.bodyClassList);
